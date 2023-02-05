@@ -1,5 +1,6 @@
 """
-
+## Author: Jonathan Nkangabwa, original author is Denis Case
+## Date: February 4th, 2023
 Listens for task messages on the queue.
 This process runs continously. 
 

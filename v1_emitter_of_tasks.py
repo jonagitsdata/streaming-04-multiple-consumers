@@ -1,5 +1,6 @@
 """
-
+## Jonathan Nkangabwa, original author is Denis Case
+## Date: February 4th, 2023
 Creates and sends a task message to the queue each execution.
 This process runs and finishes. 
 Make tasks harder/longer-running by adding dots at the end of the message.
@@ -36,7 +37,7 @@ channel = connection.channel()
 # messages will not be deleted until the consumer acknowledges
 channel.queue_declare(queue="task_queue", durable=True)
 # create a message by joining the command line arguments
-message = " ".join(sys.argv[1:]) or "First task..."
+message = " ".join(sys.argv[1:]) or "Sixth task.."
 # publish the message to the queue
 channel.basic_publish(
     exchange="",
